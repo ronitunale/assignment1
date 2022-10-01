@@ -48,9 +48,9 @@ pipeline {
 		stage ('deployment') {
 		steps { 
 			dir ('/mnt') {
-		sh "scp -i linuxm.pem /mnt/22Q1/assignment1/index.html ec2-user@ec2-13-232-81-142.ap-south-1.compute.amazonaws.com:/var/www/html/"
-		sh "scp -i linuxm.pem /mnt/22Q2/assignment1/index.html ec2-user@ec2-13-232-66-43.ap-south-1.compute.amazonaws.com:/var/www/html/"
-		sh "scp -i linuxm.pem /mnt/22Q3/assignment1/index.html ec2-user@ec2-65-2-180-29.ap-south-1.compute.amazonaws.com:/var/www/html/"
+		sh "scp -i /mnt/22Q1/linuxm.pem /mnt/22Q1/assignment1/index.html ec2-user@ec2-13-232-81-142.ap-south-1.compute.amazonaws.com:/var/www/html/"
+		sh "scp -i /mnt/22Q2/linuxm.pem /mnt/22Q2/assignment1/index.html ec2-user@ec2-13-232-66-43.ap-south-1.compute.amazonaws.com:/var/www/html/"
+		sh "scp -i /mnt/22Q3/linuxm.pem /mnt/22Q3/assignment1/index.html ec2-user@ec2-65-2-180-29.ap-south-1.compute.amazonaws.com:/var/www/html/"
 		
 			}
 		
