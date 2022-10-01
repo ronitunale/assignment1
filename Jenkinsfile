@@ -14,7 +14,7 @@ pipeline {
 			sh "git clone https://github.com/ronitunale/assignment1.git -b 22Q1"
 			sh "chmod -R 777 /mnt/22Q1"
 			sh " cp /mnt/linuxm.pem /mnt/22Q1/"
-			sh "chmod 400 linuxm.pem"
+			sh "chmod 400 /mnt/22Q1/linuxm.pem"
 			sh "chmod -R 777 /mnt/22Q1/"
 		}	
 		}
@@ -26,7 +26,7 @@ pipeline {
 			sh "git clone https://github.com/ronitunale/assignment1.git -b 22Q2"
 			sh "chmod -R 777 /mnt/22Q2"
 			sh " cp /mnt/linuxm.pem /mnt/22Q2/"
-			sh "chmod 400 linuxm.pem"
+			sh "chmod 400 /mnt/22Q2/linuxm.pem"
 			sh "chmod -R 777 /mnt/22Q2/"
 			
 		}	
@@ -39,7 +39,7 @@ pipeline {
 			sh "git clone https://github.com/ronitunale/assignment1.git -b 22Q3"
 			sh "chmod -R 777 /mnt/22Q3"
 			sh " cp /mnt/linuxm.pem /mnt/22Q3/"
-			sh "chmod 400 linuxm.pem"
+			sh "chmod 400 /mnt/22Q3/linuxm.pem"
 			sh "chmod -R 777 /mnt/22Q3/"
 			
 		}
