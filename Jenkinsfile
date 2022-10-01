@@ -10,18 +10,22 @@ pipeline {
 			stage ('clone-22Q1') {
 			steps {
 			dir ('/mnt/22Q1') {
+			sh "rm -rf *"
 			sh "git clone https://github.com/ronitunale/assignment1.git -b 22Q1"
 			sh "chmod -R 777 /mnt/22Q1"
 			sh " cp /mnt/linuxm.pem /mnt/22Q1"
+			sh "chmod 400 linuxm.pem"
 		}	
 		}
 		}
 			stage ('clone-22Q2') {
 			steps {
 			dir ('/mnt/22Q2') {
+			sh "rm -rf *"
 			sh "git clone https://github.com/ronitunale/assignment1.git -b 22Q2"
 			sh "chmod -R 777 /mnt/22Q2"
 			sh " cp /mnt/linuxm.pem /mnt/22Q2"
+			sh "chmod 400 linuxm.pem"
 			
 		}	
 		}
@@ -29,9 +33,11 @@ pipeline {
 			stage ('clone-22Q3') {
 			steps {
 			dir ('/mnt/22Q3') {
+			sh "rm -rf * "
 			sh "git clone https://github.com/ronitunale/assignment1.git -b 22Q3"
 			sh "chmod -R 777 /mnt/22Q3"
 			sh " cp /mnt/linuxm.pem /mnt/22Q3"
+			sh "chmod 400 linuxm.pem"
 			
 		}
 		}
