@@ -58,9 +58,9 @@ pipeline {
 		
 		stage ('deployment') {
 		steps {
-		sh "scp -i /mnt/linuxm.pem /mnt/22Q1/assignment1/index.html ec2-user@172.31.38.85:/var/www/html/"
-		sh "scp -i /mnt/linuxm.pem /mnt/22Q2/assignment1/index.html ec2-user@172.31.34.224:/var/www/html/"
-		sh "scp -i /mnt/linuxm.pem /mnt/22Q3/assignment1/index.html ec2-user@172.31.47.12:/var/www/html/"
+		sh "scp -i /mnt/22Q1/aiignment1/linuxm.pem /mnt/22Q1/assignment1/index.html ec2-user@172.31.38.85:/var/www/html/"
+		sh "scp -i /mnt/22Q2/assignment1/linuxm.pem /mnt/22Q2/assignment1/index.html ec2-user@172.31.34.224:/var/www/html/"
+		sh "scp -i /mnt/22Q3/assignment1/linuxm.pem /mnt/22Q3/assignment1/index.html ec2-user@172.31.47.12:/var/www/html/"
 		
 	
 		
