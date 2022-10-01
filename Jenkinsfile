@@ -56,11 +56,21 @@ pipeline {
 		}
 		}
 		
-		stage ('deployment') {
+		stage ('deployment-slave1') {
 		steps {
 		sh "scp -i /mnt/22Q1/assignment1/linuxm.pem /mnt/22Q1/assignment1/index.html ec2-user@172.31.38.85:/var/www/html/"
+		}
+		}
+			stage ('deployment-slave2') {
+			       steps {
 		sh "scp -i /mnt/22Q2/assignment1/linuxm.pem /mnt/22Q2/assignment1/index.html ec2-user@172.31.34.224:/var/www/html/"
+			       }
+			       }
+			       stage ('deployment-slave3') {
+				       steps {
 		sh "scp -i /mnt/22Q3/assignment1/linuxm.pem /mnt/22Q3/assignment1/index.html ec2-user@172.31.47.12:/var/www/html/"
+				       }
+			       }
 		
 	
 		
