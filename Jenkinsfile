@@ -45,7 +45,7 @@ pipeline {
 		}
 		}
 		}
-		stage ('copy-key') {
+		stage ('copy-keyy') {
 		steps { 
 		sh " cp /mnt/linuxm.pem /mnt/22Q1/assignment1/"
 		sh "chmod 400 /mnt/22Q1/assignment1/linuxm.pem"
